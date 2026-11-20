@@ -1,0 +1,27 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "DehnHadwiger4D.dehnHadwiger_eq_of_scissorsCongruent",
+    "DehnHadwiger4D.dehnHadwigerSum_eq_of_scissors",
+    "DehnHadwiger4D.dehnHadwiger_tesseract",
+    "DehnHadwiger4D.dehnHadwiger_cell16",
+    "DehnHadwiger4D.dehnHadwiger_cell24",
+    "DehnHadwiger4D.arccos_quarter_not_ratPi",
+    "DehnHadwiger4D.dehnHadwiger_cell5_eq",
+    "DehnHadwiger4D.dehnHadwiger_cell5_ne_zero",
+    "DehnHadwiger4D.dehnHadwiger_cell120",
+    "DehnHadwiger4D.dehnHadwiger_cell600_eq",
+    "DehnHadwiger4D.dehnHadwiger_cell600_ne_zero",
+    "DehnHadwiger4D.similarCell5_not_scissorsCongruent",
+    "DehnHadwiger4D.similarCell600_not_scissorsCongruent",
+    "DehnHadwiger4D.similarCell5_not_scissorsCongruent_similarCell600"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
