@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this library, please cite the paper below and the repository commit you used."
+type: software
+title: "The Dehn–Hadwiger invariant in four dimensions (Lean 4 + Mathlib)"
+authors:
+  - name: "DICTO"
+    orcid: "https://orcid.org/0009-0001-2620-2036"
+repository-code: "https://github.com/DICTOR-Master/dehn-hadwiger-4d-lean"
+license: Apache-2.0
+preferred-citation:
+  type: article
+  status: preprint
+  title: "The Dehn–Hadwiger invariant in four dimensions — Machine-checked for the six regular polytopes, and one 600-cell balanced by 120 regular 5-cells"
+  authors:
+    - name: "DICTO"
+      orcid: "https://orcid.org/0009-0001-2620-2036"
+  year: 2026
+  publisher:
+    name: "Zenodo"
+  doi: "10.5281/zenodo.24393967"
+  url: "https://doi.org/10.5281/zenodo.24393967"

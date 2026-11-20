@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
 # formalization.yaml v0.4
-# Source rule: SOURCE-BASED (Hadwiger 1954 "formalizes"; no original-proof source).
+# Source rule: SOURCE-BASED (Hadwiger 1954 and DICTO's paper #116 "formalizes"; no original-proof source).
 version: "v0.4"
 
 project:
@@ -141,6 +141,24 @@ sources:
       The 3-dimensional development whose definitions (convex polytopes, tangent
       cones, lineality spaces, wedge angles, scissors congruence, similar copies)
       and cut and dissection lemmas this entry's library reuses unchanged.
+    author_endorsement: "participated"
+
+  - title: "The Dehn–Hadwiger invariant in four dimensions: Machine-checked for the six regular polytopes, and one 600-cell balanced by 120 regular 5-cells"
+    authors:
+      - name: "DICTO"
+        orcid: "0009-0001-2620-2036"
+        github: "DICTOR-Master"
+    id: "doi:10.5281/zenodo.24393967"
+    type: "paper"
+    location: "Zenodo preprint (paper #116), 20 November 2026, version 1: doi:10.5281/zenodo.24393968 (all versions: doi:10.5281/zenodo.24393967); not peer reviewed"
+    relationship: "formalizes"
+    note: >-
+      DICTO's paper presenting this development: its Theorem 1 (a) (the
+      bridge, with Theorem 4 and Corollary 4'), (b) and (c) (the six regular
+      4-polytopes, with Theorem 6 and Lemma 7), (d) and (e) (non-congruence,
+      Corollary 9) are the fourteen statements of this entry. Its Theorem 2
+      (one 600-cell balanced by 120 regular 5-cells) is not part of this entry,
+      except the angle relation used in the 600-cell's invariant.
     author_endorsement: "participated"
 
 related_formalizations:
