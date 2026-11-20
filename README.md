@@ -40,6 +40,25 @@ module system.
 DICTO posed the formalization and directed it; the Lean code was written by a Claude Code agent (Claude, Anthropic).
 See `formalization.yaml` for the sources, the related formalizations and the checks.
 
+## Sources
+
+- H. Hadwiger, Zum Problem der Zerlegungsgleichheit k-dimensionaler Polyeder, Math. Ann. 127 (1954) 170–174,
+  doi:10.1007/BF01361118 (Zbl 0055.05002). Read. Formalized here: the codimension-2 invariant and its invariance. Its
+  §V proves that the regular simplex and the cube of equal volume are not scissors congruent in any dimension k ≥ 3;
+  the 5-cell against the tesseract is the case k = 4.
+- J. C. Lagarias, D. Moews, Polytopes that fill ℝⁿ and scissors congruence, Discrete Comput. Geom. 13 (1995) 573–583,
+  doi:10.1007/BF02574064 (Zbl 0824.52014). Abstract and review only. A polytope that fills ℝⁿ with congruent copies of
+  itself has all its Dehn invariants zero except volume; the tesseract, the 16-cell and the 24-cell fill ℝ⁴, so their
+  zero invariants are expected; the 120-cell and the 600-cell do not fill space.
+- The monographs, cited only: V. G. Boltianskii, *Hilbert's Third Problem*, translated from the Russian, Winston and
+  Wiley, 1978; C.-H. Sah, *Hilbert's Third Problem: Scissors Congruence*, Research Notes in Mathematics 33, Pitman,
+  1979; J. L. Dupont, *Scissors Congruences, Group Homology and Characteristic Classes*, Nankai Tracts in Mathematics 1,
+  World Scientific, Singapore, 2001.
+- `formalization.yaml` lists every source (Dehn, Jessen, Dupont–Sah and paper #116 included) and how each was checked.
+
+Formal search (20 November 2026): Lean/Mathlib, the Isabelle AFP, Rocq, HOL Light and Mizar; nothing on the
+Dehn–Hadwiger invariant in dimension 4. The Lean files found treat Hilbert's third problem in dimension 3 only.
+
 ## How to cite and reuse
 
 ### How to cite

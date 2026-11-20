@@ -28,7 +28,7 @@ project:
     angle is 4 pi / 3 minus the 5-cell's, their invariants have opposite signs
     and no similar copy of the 5-cell is scissors congruent to a similar copy of
     the 600-cell. The non-congruence of the regular simplex and the cube is
-    classical; the entry claims no new mathematics, only the formalization.
+    Hadwiger's (1954, section V); the entry claims no new mathematics, only the formalization.
     The 600-cell needs the face structure: at every ridge point the two tight
     facets are neighbours across a triangle; this is proved from exact Z[phi]
     data (its 600 facet normals, 120 corners and, for every facet, its four
@@ -61,14 +61,18 @@ sources:
       - "H. Hadwiger"
     id: "doi:10.1007/BF01361118"
     type: "paper"
-    location: "Mathematische Annalen 127 (1954) 170-174"
+    location: "Mathematische Annalen 127 (1954) 170-174 (Zbl 0055.05002)"
     relationship: "formalizes"
     note: >-
-      Cited only (not read; bibliographic data from Crossref). The invariants of
-      codimension-2 faces (volume tensored with dihedral angle modulo rational
-      multiples of pi) and their invariance under dissection; the entry states
-      the codimension-2 invariant for sets, its invariance, and its values on
-      the regular 4-polytopes.
+      Read (scan of the Goettingen digital library, all five pages: the
+      invariants (7b), the necessary conditions (10), (11) of section IV, and
+      section V on the simplex and the cube). The invariants of codimension-2
+      faces (volume tensored with dihedral angle modulo rational multiples of
+      pi) and their invariance under dissection; the entry states the
+      codimension-2 invariant for sets, its invariance, and its values on the
+      regular 4-polytopes. Section V proves that the regular simplex and the
+      cube of equal volume are not scissors congruent in any dimension k >= 3;
+      the 5-cell against the tesseract is its case k = 4.
     author_endorsement: "n/a"
   - title: "Vorlesungen über Inhalt, Oberfläche und Isoperimetrie"
     authors:
@@ -124,9 +128,39 @@ sources:
       - "D. Moews"
     id: "doi:10.1007/BF02574064"
     type: "paper"
-    location: "Discrete & Computational Geometry 13 (1995) 573-583"
+    location: "Discrete & Computational Geometry 13 (1995) 573-583 (Zbl 0824.52014)"
     relationship: "background"
-    note: "Cited only (bibliographic data from Crossref). Dehn invariants and Hadwiger invariants of space-filling polytopes."
+    note: >-
+      Abstract and review only (zbMATH record and the publisher's abstract). A
+      polytope that fills R^n with congruent copies of itself has all its Dehn
+      invariants zero except volume, and in dimension at most 4 is scissors
+      congruent to a cube. The tesseract, the 16-cell and the 24-cell fill R^4,
+      so their zero invariants are expected; the 120-cell and the 600-cell do
+      not fill space.
+    author_endorsement: "n/a"
+  - title: "Hilbert's Third Problem"
+    authors:
+      - "V. G. Boltianskii"
+    type: "book"
+    location: "translated from the Russian, Winston and Wiley, 1978"
+    relationship: "background"
+    note: "Cited only. Book-length account of the theory."
+    author_endorsement: "n/a"
+  - title: "Hilbert's Third Problem: Scissors Congruence"
+    authors:
+      - "C.-H. Sah"
+    type: "book"
+    location: "Research Notes in Mathematics 33, Pitman, 1979"
+    relationship: "background"
+    note: "Cited only. Book-length account of the theory."
+    author_endorsement: "n/a"
+  - title: "Scissors Congruences, Group Homology and Characteristic Classes"
+    authors:
+      - "J. L. Dupont"
+    type: "book"
+    location: "Nankai Tracts in Mathematics 1, World Scientific, Singapore, 2001"
+    relationship: "background"
+    note: "Cited only (section 1 and the bibliography read for the Dehn Canon). Book-length account of the theory."
     author_endorsement: "n/a"
   - title: "The Dehn Canon: Hilbert's Third Problem, Machine-Checked"
     authors:
@@ -257,12 +291,16 @@ review:
     a separate study. The comparator was run locally with Lean's kernel, NanoDa
     and con-ron, and three altered copies (a changed constant, a changed
     definition, a proof replaced by sorry) were each rejected. Literature (20
-    November 2026, free routes only): bibliographic records of every source
-    checked on Crossref or zbMATH; the papers themselves were not read. Formal
-    search (20 November 2026): GitHub Lean code for Dehn invariant, Hadwiger
-    and scissors congruence (atlas-lean, undergraduate-math-lean, FormalBook:
-    dimension 3 only); Mathlib has no Dehn invariant; no formalization of the
-    Dehn-Hadwiger invariant in dimension 4 was found.
+    November 2026, free routes only): Hadwiger 1954 read in the scan of the
+    Goettingen digital library; Jessen 1972 and Lagarias-Moews through their
+    zbMATH records (and, for Lagarias-Moews, the publisher's abstract); the
+    other cited sources through their bibliographic records only (Dupont 2001:
+    section 1 and the bibliography read for the Dehn Canon). Formal search (20
+    November 2026): Lean/Mathlib (Mathlib has no Dehn invariant; GitHub Lean
+    code for Dehn invariant, Dehn Hadwiger and scissors congruent: atlas-lean,
+    undergraduate-math-lean, FormalBook, dimension 3 only), the Isabelle AFP,
+    Rocq/Coq, HOL Light and Mizar: no formalization of the Dehn-Hadwiger
+    invariant in dimension 4 or higher was found.
 
 alignment:
   namespace: "DehnHadwiger4D"
